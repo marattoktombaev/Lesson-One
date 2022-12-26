@@ -3,7 +3,7 @@ void main () {
   print(a.toInt().runtimeType);
 
   List<String> b = ['123', '123'];
-  print(b.toInt().runtimeType);
+  // print(b.toInt().runtimeType);
 
 }
 
@@ -12,8 +12,6 @@ extension StringToInt on String {
     return int.parse(this);
   }
 }
-extension ListStringToListInt on List<String> {
-  List<int> toInt () {
-    return map(((e) => int.parse(e)).toList());
-  }
-}
+// extension ListStringToListInt on List<String> {
+//   List<int> toInt () {
+//     int map(e) => int.parse(e);}
